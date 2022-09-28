@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { BsFillCaretDownFill } from 'react-icons/Bs';
 import Image from 'next/image';
+import Quiz from '../../public/quiz2.png'
 
 const Navbar = () => {
 
@@ -29,148 +30,135 @@ const Navbar = () => {
                                 {/* Menu Item */}
 
                                 <div className="hidden sm:flex sm:items-center">
-                                    {/* <ul>
 
-                                    <Link href="/features" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Features <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce'/></a></Link>
+                                    {/* <div className="group relative">
+                                        <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Features <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
 
-                                    <li>
-                    <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                  </li>
-                  
-                                    </ul> */}
+                                        
+
+  
+
+
+
+
+
+                                        </div>
+
+
+                                    </div> */}
+
+
+
+
                                     <div className="group relative">
-                                        <div className=" text-gray-800 text-sm font-semibold  hover:text-cyan-600 mr-8">Features <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
-                                            <div className="bg-white absolute z-10 pt-[25px]  hidden  group-hover:block  ">
-                                                <div className=" border-t-4 border-0  border-t-cyan-600 w-96  h-auto rounded-b-lg bg-black px-1 pt-2 pb-2 shadow-lg   ">
-                                                    <div className="grid grid-cols-1 gap-4  ">
-                                                        <div className="py-1 text-sm text-gray-700  dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                        <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Features <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
 
 
-                                                            {/* <ul className="py-1 text-sm  text-gray-700  dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                            <div className="absolute z-10 hidden bg-gray-100 pt-7 group-hover:block w-[530px] -left-16">
+                                                <div className="top-32 border-4 border-t-orange-400 bg-gray-100 px-2 pt-4 pb-4 shadow-lg">
+                                                    <div className="grid py-5  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-2   px-6">
+                                                        {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-2"> */}
 
 
+                                                        <ul className='w-[480px] justify-between flex container ml-[-13px]'>
+                                                        {/* <ul className=''> */}
+                                                            <li className='container  mr-5'>
+                                                                {/* <a href="#" className="block  p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 "> */}
+                                                                {/* <a href="#" className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group"> */}
+                                                                    {/* <a href="#" className="flex justify-between items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"> */}
+                                                                    <a href="#" className="flex justify-between items-center p-3 rounded-lg  dark:hover:bg-gray-700 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+                                                                    {/* <svg className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path></svg> */}
+                                                                    {/* <img className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" src="quiz2.png" alt="Hello" /> */}
+                                                                    {/* <div className='border-4 border-black'> */}
+                                                                    <Image height={"45px"} width={"45px"}  src={Quiz} />
 
+                                                                    {/* </div> */}
+                                                                    <div className="font-semibold mr-14 text-black ">Online Stores</div>
+                                                                    {/* <div className='block'>
 
-                                                                <li>
+<span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+</div> */}
+                                                                </a>
+                                                            </li>
 
-                                                                    <a href="#" className="block py-2 px-4 hover:bg-gray-100  dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                                                                </li>
-                                                            </ul>
-                                                            <ul className="py-1 text-sm  text-gray-700  dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                                                <li>
+                                                            <li className='container '>
+                                                                {/* <a href="#" className="block  p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 "> */}
+                                                                {/* <a href="#" className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group"> */}
+                                                                    {/* <a href="#" className="flex justify-between items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"> */}
+                                                                    <a href="#" className="flex justify-between items-center p-3 rounded-lg  dark:hover:bg-gray-700 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+                                                                    {/* <svg className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path></svg> */}
+                                                                    {/* <img className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" src="quiz2.png" alt="Hello" /> */}
+                                                                    {/* <div className='border-4 border-black'> */}
+                                                                    <Image height={"45px"} width={"45px"}  src={Quiz} />
 
-                                                                    <a href="#" className="group block max-w-xs mx-auto rounded-lg p-6 bg-yellow-700 ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
-                                                                        <div className="flex items-center space-x-3">
-                                                                            <svg className="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24">hello</svg>
-                                                                            <h3 className="text-slate-900 group-hover:text-white text-sm font-semibold">New project</h3>
-                                                                        </div>
-                                                                        <p className="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
-                                                                    </a>
+                                                                    {/* </div> */}
+                                                                    <div className="font-semibold mr-14 text-black ">Online Stores</div>
+                                                                    {/* <div className='block'>
 
-
-                                                                </li>
-                                                                <li>
-
-                                                                    <a href="#" className="group block  max-w-xs mx-auto rounded-lg p-6 bg-yellow-700 ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
-                                                                        <div className="flex items-center space-x-3">
-                                                                            <svg className="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24">hello</svg>
-                                                                            <h3 className="text-slate-900 group-hover:text-white text-sm font-semibold">New project</h3>
-                                                                        </div>
-                                                                        <p className="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
-                                                                    </a>
-
-
-                                                                </li>
-                                                            </ul> */}
-
-<div className="grid py-5 px-4 mx-auto max-w-screen-xl text-sm text-gray-500 dark:text-gray-400 md:grid-cols-2  md:px-4">
-
-                                                            <ul className="hidden mb-4 space-y-4 md:mb-0 md:block" aria-labelledby="mega-menu-full-image-button">
-                <li>
-                    <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                        Online Stores
-                    </a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                        Segmentation
-                    </a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                        Marketing CRM
-                    </a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                        Online Stores
-                    </a>
-                </li>
-            </ul>
-
-            <ul className="mb-4 space-y-4 md:mb-0">
-                <li>
-                    <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                        Our Blog
-                    </a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                        Terms & Conditions
-                    </a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                        License
-                    </a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                        Resources
-                    </a>
-                </li>
-            </ul>
-
-            <ul className="mb-4 space-y-4 md:mb-0">
-                <li>
-                    <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                        Our Blog
-                    </a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                        Terms & Conditions
-                    </a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                        License
-                    </a>
-                </li>
-                <li>
-                    <a href="#" className="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
-                        Resources
-                    </a>
-                </li>
-            </ul>
+<span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+</div> */}
+                                                                </a>
+                                                            </li>
+                                                            {/* <li className='container'>
+                                                                <a href="#" className="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                                    <svg className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path></svg>
+                                                                    <div className="font-semibold">Segmentation</div>
+                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                                </a>
+                                                            </li> */}
+                                                            {/* <li>
+                                                                <a href="#" className="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                                    <svg className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path></svg>
+                                                                    <div className="font-semibold">Marketing CRM</div>
+                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                                </a>
+                                                            </li> */}
+                                                        </ul>
 
 
 
+                                                        {/* <ul>
+                                                            <li>
+                                                                <a href="#" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                                    <div className="font-semibold">Online Stores</div>
+                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                                    <div className="font-semibold">Segmentation</div>
+                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                                    <div className="font-semibold">Marketing CRM</div>
+                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul className="hidden md:block">
+                                                            <li>
+                                                                <a href="#" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                                    <div className="font-semibold">Audience Management</div>
+                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                                    <div className="font-semibold">Creative Tools</div>
+                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                                    <div className="font-semibold">Marketing Automation</div>
+                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul> */}
 
 
-                                                        </div>
-
-
-
-
-
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -238,9 +226,9 @@ const Navbar = () => {
                             </div>
 
                         </div>
-                    </div>
-                </div>
-            </nav>
+                    </div >
+                </div >
+            </nav >
 
 
         </>
