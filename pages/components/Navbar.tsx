@@ -1,12 +1,16 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import { BsFillCaretDownFill } from 'react-icons/Bs';
+import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/Bs';
 import Image from 'next/image';
 import Quiz from '../../public/quiz2.png'
 
 const Navbar = () => {
 
     const [navbar, setNavbar] = useState(false);
+    const [features, setFeatures] = useState(false);
+    const [meduimfeatures, setmediumFeatures] = useState(false);
+
+
 
     return (
         <>
@@ -15,7 +19,7 @@ const Navbar = () => {
 
             <nav>
                 <div className="bg-gray-100 font-sans w-full m-0">
-                    <div className="bg-white shadow">
+                    <div className="bg-white shadow-md">
                         <div className="container mx-auto px-4">
                             <div className="flex items-center justify-between py-4">
 
@@ -31,136 +35,153 @@ const Navbar = () => {
 
                                 <div className="hidden sm:flex sm:items-center">
 
-                                    {/* <div className="group relative">
-                                        <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Features <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
-
-                                        
-
-  
-
-
-
-
-
-                                        </div>
-
-
-                                    </div> */}
-
-
-
-
                                     <div className="group relative">
-                                        <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Features <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
+                                        <div onClick={() => setmediumFeatures(!meduimfeatures)} className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8 ">Features <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
 
 
-                                            <div className="absolute z-10 hidden bg-gray-100 pt-7 group-hover:block w-[530px] -left-16">
-                                                <div className="top-32 border-4 border-t-orange-400 bg-gray-100 px-2 pt-4 pb-4 shadow-lg">
-                                                    <div className="grid py-5  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-2   px-6">
-                                                        {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-2"> */}
+                                            <div className={`absolute z-10 lg:hidden bg-white pt-[26px] group-hover:block w-[580px] -left-16 ${!meduimfeatures ? "block" : "hidden"}`}>
 
 
-                                                        <ul className='w-[480px] justify-between flex container ml-[-13px]'>
-                                                        {/* <ul className=''> */}
-                                                            <li className='container  mr-5'>
-                                                                {/* <a href="#" className="block  p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 "> */}
-                                                                {/* <a href="#" className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group"> */}
-                                                                    {/* <a href="#" className="flex justify-between items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"> */}
-                                                                    <a href="#" className="flex justify-between items-center p-3 rounded-lg  dark:hover:bg-gray-700 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-                                                                    {/* <svg className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path></svg> */}
-                                                                    {/* <img className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" src="quiz2.png" alt="Hello" /> */}
-                                                                    {/* <div className='border-4 border-black'> */}
-                                                                    <Image height={"45px"} width={"45px"}  src={Quiz} />
+                                                <div className="top-32 border-t-2 border-t-cyan-400 bg-slate-50 px-2 pt-4 pb-2 shadow-lg rounded-b-md ">
 
-                                                                    {/* </div> */}
-                                                                    <div className="font-semibold mr-14 text-black ">Online Stores</div>
-                                                                    {/* <div className='block'>
 
-<span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-</div> */}
+
+                                                    <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-3   px-6">
+
+
+                                                        <ul className='w-[540px] justify-between flex container ml-[-17px]'>
+
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+
+
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+
+
+
+                                                                    <div className="font-semibold mr-[0.2rem] text-center text-black ">Advanced Quizzes</div>
+
+
                                                                 </a>
                                                             </li>
 
-                                                            <li className='container '>
-                                                                {/* <a href="#" className="block  p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 "> */}
-                                                                {/* <a href="#" className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group"> */}
-                                                                    {/* <a href="#" className="flex justify-between items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"> */}
-                                                                    <a href="#" className="flex justify-between items-center p-3 rounded-lg  dark:hover:bg-gray-700 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-                                                                    {/* <svg className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path></svg> */}
-                                                                    {/* <img className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" src="quiz2.png" alt="Hello" /> */}
-                                                                    {/* <div className='border-4 border-black'> */}
-                                                                    <Image height={"45px"} width={"45px"}  src={Quiz} />
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
 
-                                                                    {/* </div> */}
-                                                                    <div className="font-semibold mr-14 text-black ">Online Stores</div>
-                                                                    {/* <div className='block'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
 
-<span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-</div> */}
+
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+
+
+
+                                                                    <div className="font-semibold mr-[0.2rem] text-center text-black ">Advanced Quizzes</div>
+
+
                                                                 </a>
                                                             </li>
-                                                            {/* <li className='container'>
-                                                                <a href="#" className="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                                                    <svg className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path></svg>
-                                                                    <div className="font-semibold">Segmentation</div>
-                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
+
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+
+
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+
+
+
+                                                                    <div className="font-semibold mr-[0.2rem] text-center text-black ">Advanced Quizzes</div>
+
+
                                                                 </a>
-                                                            </li> */}
-                                                            {/* <li>
-                                                                <a href="#" className="flex items-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                                                    <svg className="mr-2 w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path></svg>
-                                                                    <div className="font-semibold">Marketing CRM</div>
-                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                                                                </a>
-                                                            </li> */}
+                                                            </li>
+
+
+
                                                         </ul>
 
 
-
-                                                        {/* <ul>
-                                                            <li>
-                                                                <a href="#" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                                                    <div className="font-semibold">Online Stores</div>
-                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                                                    <div className="font-semibold">Segmentation</div>
-                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                                                    <div className="font-semibold">Marketing CRM</div>
-                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <ul className="hidden md:block">
-                                                            <li>
-                                                                <a href="#" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                                                    <div className="font-semibold">Audience Management</div>
-                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                                                    <div className="font-semibold">Creative Tools</div>
-                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#" className="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                                                                    <div className="font-semibold">Marketing Automation</div>
-                                                                    <span className="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul> */}
 
 
                                                     </div>
+
+
                                                 </div>
+
+
+                                                <div className="top-32  bg-slate-50 px-2  pb-4 shadow-lg rounded-b-md ">
+
+
+
+                                                    <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-3   px-6">
+
+
+                                                        <ul className='w-[540px] justify-between flex container ml-[-17px]'>
+
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+
+
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+
+
+
+                                                                    <div className="font-semibold mr-[0.2rem] text-center text-black ">Advanced Quizzes</div>
+
+
+                                                                </a>
+                                                            </li>
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+
+
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+
+
+
+                                                                    <div className="font-semibold mr-[0.2rem] text-center text-black ">Advanced Quizzes</div>
+
+
+                                                                </a>
+                                                            </li>
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
+
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+
+
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+
+
+
+                                                                    <div className="font-semibold mr-[0.2rem] text-center text-black ">Advanced Quizzes</div>
+
+
+                                                                </a>
+                                                            </li>
+
+
+
+                                                        </ul>
+
+
+
+
+                                                    </div>
+
+
+                                                </div>
+
+
+
+
+
+
                                             </div>
                                         </div>
                                     </div>
@@ -180,7 +201,11 @@ const Navbar = () => {
 
                                 <div className="hidden sm:flex sm:items-center ">
                                     <Link href="#" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-4">Sign in</a></Link>
-                                    <Link href="#" ><a className="text-gray-800 text-sm font-semibold border px-4 py-2 rounded-lg hover:text-white hover:border-cyan-600 hover:bg-cyan-600">Sign up</a></Link>
+                                    <Link href="#" ><a className="text-white text-sm font-semibold border px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-red-800 hover:from-sky-400 hover:to-cyan-500">Sign up</a></Link>
+
+
+
+
                                 </div>
 
                                 {/* Menu options Button ,Login and signup in moblie screen */}
@@ -189,8 +214,7 @@ const Navbar = () => {
 
 
                                     <Link href="#" ><a className="text-gray-800 text-sm font-semibold pb-[6px] py-2 hover:text-cyan-600 mr-4 ">Sign in</a></Link>
-                                    <Link href="#"><a className="text-gray-800 text-sm font-semibold border pb-[6px] px-4 py-2 rounded-lg hover:text-white hover:border-cyan-600 hover:bg-cyan-600 mr-2">Sign up</a></Link>
-
+                                    <Link href="#" ><a className="text-white text-sm font-semibold border px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-red-800 hover:from-sky-400 hover:to-cyan-500">Sign up</a></Link>
 
                                     <button
                                         className={'p-2 text-gray-700 rounded-md outline-none'}
@@ -216,7 +240,56 @@ const Navbar = () => {
 
                             <div className={`block bg-white border-t-2 py-2 sm:hidden ${navbar ? "block" : "hidden"}`}>
                                 <div className="flex flex-col">
-                                    <Link href="/features" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mb-1">Features <BsFillCaretDownFill className='inline-flex' /></a></Link>
+
+
+
+                                    <div onClick={() => setFeatures(!features)} className={`text-gray-800 text-sm font-semibold  mb-1 ${!features ? "hover:text-cyan-600" : ""}`}>Features {!features ? <BsFillCaretDownFill className='inline-flex' /> : <BsFillCaretUpFill className='inline-flex' />}
+
+
+
+                                        <div className={`flex  mt-2 mb-2 ml-4 ${!features ? "hidden" : "block "}`} >
+
+
+
+
+                                            <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
+
+
+                                                <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+
+
+                                                    <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_38rem_0_0_0]   hover:shadow-cyan-400">
+
+
+                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+
+
+
+                                                        <div className="font-semibold mr-28 text-center text-black ">Advanced Quizzes</div>
+
+
+                                                    </a>
+                                                </li>
+
+
+
+
+
+                                            </ul>
+
+
+
+
+                                        </div>
+
+
+
+
+                                    </div>
+
+
+
+
                                     <Link href="/store" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mb-1">Store <BsFillCaretDownFill className='inline-flex' /></a></Link>
                                     <Link href="/pricing" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mb-1">Pricing</a></Link>
                                     <Link href="/about" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mb-1">About</a></Link>
