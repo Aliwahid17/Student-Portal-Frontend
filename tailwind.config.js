@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {},
     animation:{
-      'animation-bounce' : 'bounce 1s 15'
+      'animation-bounce' : 'bounce 1s 15',
     }
   },
   variants: {

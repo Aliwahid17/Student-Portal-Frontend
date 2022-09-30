@@ -33,13 +33,103 @@ const Navbar = () => {
 
                                 {/* Menu Item */}
 
-                                <div className="hidden sm:flex sm:items-center">
+                                <div className="hidden lg:flex sm:items-center">
+
+                                    {/* Services  */}
 
                                     <div className="group relative">
-                                        <div onClick={() => setmediumFeatures(!meduimfeatures)} className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8 ">Features <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
+                                        <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8 ">Services <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
+
+                                            {/* hover inside */}
+
+                                            <div className="absolute z-10 hidden bg-white pt-[26px] group-hover:block w-[580px] -left-16">
+
+                                                {/* First Row  */}
+
+                                                <div className="top-32 border-t-2 border-t-cyan-400 bg-slate-50 px-2 pt-4 pb-2 shadow-lg rounded-b-md ">
+                                                    <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-3   px-6">
+                                                        <ul className='w-[540px] justify-between flex container ml-[-17px]'>
+
+                                                            {/* Advanced Quizzes */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold mr-[0.2rem] text-center text-black ">Advanced Quizzes</div>
+                                                                </a>
+                                                            </li>
+
+                                                            {/* Advanced Tests */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold mr-[0.2rem] text-center text-black ">Advanced Tests</div>
+                                                                </a>
+                                                            </li>
+
+                                                            {/* Application Review */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold mr-[0.2rem] text-center text-black ">Application Review</div>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
 
 
-                                            <div className={`absolute z-10 lg:hidden bg-white pt-[26px] group-hover:block w-[580px] -left-16 ${!meduimfeatures ? "block" : "hidden"}`}>
+                                                </div>
+
+                                                {/* Second Row  */}
+
+                                                <div className="top-32  bg-slate-50 px-2  pb-4 shadow-lg rounded-b-md ">
+                                                    <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-3   px-6">
+                                                        <ul className='w-[540px] justify-between flex container ml-[-17px]'>
+
+                                                            {/* Ebooks  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold mr-[0.2rem] text-center w-24 text-black ">E-Books</div>
+                                                                </a>
+                                                            </li>
+
+                                                            {/* PDF Notes  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold  w-[92px] text-center text-black ">PDF Notes</div>
+                                                                </a>
+                                                            </li>
+
+                                                            {/* Live Session  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold w-[92px]  text-center text-black ">Live Sessions</div>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div className="group relative">
+                                        <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8 ">Resources <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
+
+
+                                            {/* <div className={`absolute z-10 lg:hidden bg-white pt-[26px] group-hover:block w-[580px] -left-16 ${!meduimfeatures ? "block" : "hidden"}`}> */}
+                                            <div className={"absolute z-10 hidden bg-white pt-[26px] group-hover:block w-[580px] -left-16"}>
 
 
                                                 <div className="top-32 border-t-2 border-t-cyan-400 bg-slate-50 px-2 pt-4 pb-2 shadow-lg rounded-b-md ">
@@ -180,8 +270,6 @@ const Navbar = () => {
 
 
 
-
-
                                             </div>
                                         </div>
                                     </div>
@@ -191,15 +279,16 @@ const Navbar = () => {
 
 
 
-                                    <Link href="/store" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Store <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' /></a></Link>
+                                    {/* <Link href="/store" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Store <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' /></a></Link> */}
                                     <Link href="/pricing" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Pricing</a></Link>
-                                    <Link href="/about" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">About</a></Link>
+                                    {/* <Link href="/pricing" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Pricing</a></Link> */}
+                                    <Link href="/about" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">About Us</a></Link>
                                     <Link href="/contact" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600">Contact Us</a></Link>
                                 </div>
 
                                 {/* SignUp and LogIn Link For medium Screen */}
 
-                                <div className="hidden sm:flex sm:items-center ">
+                                <div className="hidden  lg:flex sm:items-center ">
                                     <Link href="#" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-4">Sign in</a></Link>
                                     <Link href="#" ><a className="text-white text-sm font-semibold border px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-red-800 hover:from-sky-400 hover:to-cyan-500">Sign up</a></Link>
 
@@ -210,7 +299,7 @@ const Navbar = () => {
 
                                 {/* Menu options Button ,Login and signup in moblie screen */}
 
-                                <div className="sm:hidden cursor-pointer flex">
+                                <div className="lg:hidden cursor-pointer flex">
 
 
                                     <Link href="#" ><a className="text-gray-800 text-sm font-semibold pb-[6px] py-2 hover:text-cyan-600 mr-4 ">Sign in</a></Link>
@@ -222,12 +311,12 @@ const Navbar = () => {
                                     >
                                         {navbar ? (
 
-                                            <svg width="25px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-door-open animate-animation-bounce">
+                                            <svg width="25px" height="25px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-door-open animate-animation-bounce">
                                                 <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
                                                 <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z" />
                                             </svg>
                                         ) : (
-                                            <svg width="25px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-door-closed animate-animation-bounce">
+                                            <svg width="25px" height="25px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-door-closed animate-animation-bounce">
                                                 <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V2zm1 13h8V2H4v13z" />
                                                 <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0z" />
                                             </svg>
@@ -238,12 +327,84 @@ const Navbar = () => {
                                 </div>
                             </div>
 
-                            <div className={`block bg-white border-t-2 py-2 sm:hidden ${navbar ? "block" : "hidden"}`}>
-                                <div className="flex flex-col">
+
+
+                            <div className={`block bg-white border-t-2 py-2 lg:hidden ${navbar ? "block" : "hidden"}`}>
+
+
+                                <div className="flex flex-col ">
 
 
 
-                                    <div onClick={() => setFeatures(!features)} className={`text-gray-800 text-sm font-semibold  mb-1 ${!features ? "hover:text-cyan-600" : ""}`}>Features {!features ? <BsFillCaretDownFill className='inline-flex' /> : <BsFillCaretUpFill className='inline-flex' />}
+
+                                    <div onClick={() => setFeatures(!features)} className={`text-gray-800 text-sm font-semibold  bg-white mb-2 ${features ? "" : "border-b-2 border-b-cyan-400"} `}>
+
+                                        <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 border-b-2 border-b-gray-100'>
+
+                                            <div className='ml-4  flex mr-4 w-full '>
+                                                Features
+                                            </div>
+
+                                            <div className='mr-[29px]'>
+                                                <BsFillCaretDownFill className={`inline-flex duration-500 ease-in-out transition-all ${!features ? "rotate-0 delay-100" : "rotate-180"}`} />
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                        <div className={`flex bg-white mt-2 mb-2 ml-4 ${!features ? "hidden" : "block "}`} >
+
+
+
+
+                                            <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
+
+
+                                                <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+
+
+                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+
+
+                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+
+
+
+                                                        <div className="font-semibold mr-28 text-center text-black ">Advanced Quizzes</div>
+
+
+                                                    </a>
+                                                </li>
+
+
+
+
+
+                                            </ul>
+
+
+
+
+                                        </div>
+
+
+
+
+                                    </div>
+
+
+
+
+
+
+
+
+                                    {/* <div onClick={() => setFeatures(!features)} className={`text-gray-800 text-sm font-semibold  bg-gray-100 mb-1 ${!features ? "hover:text-cyan-600" : ""}`}>Features <BsFillCaretDownFill className={`inline-flex duration-500 ease-in-out transition-all ${!features ? "rotate-0 delay-100" : "rotate-180"}`} />
+
 
 
 
@@ -285,7 +446,7 @@ const Navbar = () => {
 
 
 
-                                    </div>
+                                    </div> */}
 
 
 
@@ -297,6 +458,61 @@ const Navbar = () => {
 
                                 </div>
                             </div>
+
+                            {/* <div className={`block  bg-white border-t-2 py-2 sm:hidden ${navbar ? "block" : "hidden"}`}>
+
+                                <div className='flex flex-col'>
+
+
+
+                                <div className='h-10'>
+                                    <div className='pt-2 text-base' onClick={() => setFeatures(!features)}>Services <BsFillCaretDownFill className={`inline-flex duration-500 ease-in-out transition-all ${!features ? "rotate-0 delay-100" : "rotate-180"}`} />
+                                    </div>
+                                </div>
+                                        <div className={`flex bg-black mt-2 mb-2  ${!features ? "hidden" : "block "}`} >
+                                            hello
+                                        </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+                            </div> */}
+
+
+                            {/* <div className={`block  bg-white border-t-2 py-2 sm:hidden ${navbar ? "block" : "hidden"}`}>
+
+                                <div className='flex flex-col'>
+
+
+
+                                <div className='h-10'>
+                                    <div className='pt-2 text-base' onClick={() => setFeatures(!features)}>Services <BsFillCaretDownFill className={`inline-flex duration-500 ease-in-out transition-all ${!features ? "rotate-0 delay-100" : "rotate-180"}`} />
+                                    </div>
+                                </div>
+                                        <div className={`flex bg-black mt-2 mb-2  ${!features ? "hidden" : "block "}`} >
+                                            hello
+                                        </div>
+
+
+
+                                    <div className=''></div>
+
+
+                                </div>
+
+
+
+
+
+                            </div> */}
 
                         </div>
                     </div >
