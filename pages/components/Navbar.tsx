@@ -17,10 +17,10 @@ const Navbar = () => {
 
             {/* <!-- component --> */}
 
-            <nav>
-                <div className="bg-gray-100 font-sans w-full m-0">
-                    <div className="bg-white shadow-md">
-                        <div className="container mx-auto px-4">
+            <nav className='sticky top-0'>
+                <div className="bg-gray-100 font-sans w-full m-0 ">
+                    <div className="bg-white shadow-md ">
+                        <div className="container mx-auto px-4 ">
                             <div className="flex items-center justify-between py-4">
 
                                 {/* Logo */}
@@ -35,58 +35,211 @@ const Navbar = () => {
 
                                 <div className="hidden lg:flex sm:items-center">
 
-                                    {/* Services  */}
+
+
+
+
+
+                                    {/* GCSE  */}
 
                                     <div className="group relative">
-                                        <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8 ">Services <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
-
-                                            {/* hover inside */}
-
-                                            <div className="absolute z-10 hidden bg-white pt-[26px] group-hover:block w-[580px] -left-16">
-
-                                                {/* First Row  */}
-
+                                        <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8 ">GCSE <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
+                                            <div className={"absolute z-10 hidden bg-white pt-[26px] group-hover:block w-[772px]  -left-16"}>
                                                 <div className="top-32 border-t-2 border-t-cyan-400 bg-slate-50 px-2 pt-4 pb-2 shadow-lg rounded-b-md ">
-                                                    <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-3   px-6">
-                                                        <ul className='w-[540px] justify-between flex container ml-[-17px]'>
+                                                    <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-5   px-6">
+                                                        <ul className='w-[739px] justify-between flex container ml-[-17px]'>
 
-                                                            {/* Advanced Quizzes */}
-
-                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold mr-[0.2rem] text-center text-black ">Advanced Quizzes</div>
-                                                                </a>
-                                                            </li>
-
-                                                            {/* Advanced Tests */}
+                                                            {/* Physics  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                                 <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
                                                                     <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold mr-[0.2rem] text-center text-black ">Advanced Tests</div>
+                                                                    <div className="font-semibold pr-[30px] text-center text-black ">Physics</div>
                                                                 </a>
                                                             </li>
 
-                                                            {/* Application Review */}
+                                                            {/* Chemistry  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold pr-4 text-center text-black ">Chemistry</div>
+                                                                </a>
+                                                            </li>
+
+                                                            {/* Biology  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold pr-[30px] text-center text-black ">Biology</div>
+                                                                </a>
+                                                            </li>
+
+                                                            {/* Mathematics  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
                                                                 <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
                                                                     <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold mr-[0.2rem] text-center text-black ">Application Review</div>
+                                                                    <div className="font-semibold mr-[0.4rem] text-center text-black ">Mathematics</div>
                                                                 </a>
                                                             </li>
 
                                                         </ul>
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
 
+
+
+
+                                    {/* Medical Application  */}
+
+                                    <div className="group relative">
+                                        <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8 ">Medical Application <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
+                                            <div className={"absolute z-10 hidden bg-white pt-[26px] group-hover:block w-[575px] -left-16"}>
+                                                <div className="top-32 border-t-2 border-t-cyan-400 bg-slate-50 px-2 pt-4 pb-2 shadow-lg rounded-b-md ">
+                                                    <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-3   px-6">
+                                                        <ul className='w-[540px] justify-between flex container ml-[-17px]'>
+
+                                                            {/* UCAT  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold pr-8 text-center text-black ">UCAT</div>
+                                                                </a>
+                                                            </li>
+
+                                                            {/* Interviews  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold pr-[15px] text-center text-black ">Interviews</div>
+                                                                </a>
+                                                            </li>
+
+                                                            {/* Personal Statement  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold text-center text-black ">Personal Statement</div>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+{/* Resources */}
+
+<div className="group relative">
+                                        <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8 ">Resources <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
+                                            <div className={"absolute z-10 hidden bg-white pt-[26px] group-hover:block w-[772px]  -left-16"}>
+                                                <div className="top-32 border-t-2 border-t-cyan-400 bg-slate-50 px-2 pt-4 pb-2 shadow-lg rounded-b-md ">
+                                                    <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-5   px-6">
+                                                        <ul className='w-[739px] justify-between flex container ml-[-17px]'>
+
+                                                            {/* Blogs  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold pr-[33px] text-center text-black ">Blogs</div>
+                                                                </a>
+                                                            </li>
+
+                                                            {/* Live Seminars  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold pr-[2px] text-center text-black ">Live Seminars</div>
+                                                                </a>
+                                                            </li>
+
+                                                            {/* Discord Community   */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold pr-[10px] text-center text-black ">Community</div>
+                                                                </a>
+                                                            </li>
+
+                                                            {/* Support  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold pr-[23px] text-center text-black ">Support</div>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Resources  */}
+
+                                    <div className="group relative">
+                                        <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8 ">Resources <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
+                                            <div className={"absolute z-10 hidden bg-white pt-[26px] group-hover:block w-[575px] -left-16"}>
+                                                <div className="top-32 border-t-2 border-t-cyan-400 bg-slate-50 px-2 pt-4 pb-2 shadow-lg rounded-b-md ">
+                                                    <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-3   px-6">
+                                                        <ul className='w-[540px] justify-between flex container ml-[-17px]'>
+
+                                                            {/* Blogs  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold pr-8 text-center text-black ">Blogs</div>
+                                                                </a>
+                                                            </li>
+
+                                                            {/* Live Seminars  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold  text-center text-black ">Live Seminars</div>
+                                                                </a>
+                                                            </li>
+
+                                                            {/* Discord Community  */}
+
+                                                            <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
+                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                    <div className="font-semibold text-center text-black ">Discord Community</div>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
                                                 </div>
 
-                                                {/* Second Row  */}
 
                                                 <div className="top-32  bg-slate-50 px-2  pb-4 shadow-lg rounded-b-md ">
+
+
+
                                                     <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-3   px-6">
+
+
                                                         <ul className='w-[540px] justify-between flex container ml-[-17px]'>
 
                                                             {/* Ebooks  */}
@@ -94,7 +247,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                                 <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
                                                                     <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold mr-[0.2rem] text-center w-24 text-black ">E-Books</div>
+                                                                    <div className="font-semibold  text-center w-24 text-black ">E-Books</div>
                                                                 </a>
                                                             </li>
 
@@ -107,12 +260,12 @@ const Navbar = () => {
                                                                 </a>
                                                             </li>
 
-                                                            {/* Live Session  */}
+                                                            {/* Support  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
                                                                 <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
                                                                     <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold w-[92px]  text-center text-black ">Live Sessions</div>
+                                                                    <div className="font-semibold pr-[23px] text-center text-black ">Support</div>
                                                                 </a>
                                                             </li>
 
@@ -124,12 +277,14 @@ const Navbar = () => {
                                     </div>
 
 
-                                    <div className="group relative">
+                                    {/* Resources  */}
+
+                                    {/* <div className="group relative">
                                         <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8 ">Resources <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
 
 
-                                            {/* <div className={`absolute z-10 lg:hidden bg-white pt-[26px] group-hover:block w-[580px] -left-16 ${!meduimfeatures ? "block" : "hidden"}`}> */}
-                                            <div className={"absolute z-10 hidden bg-white pt-[26px] group-hover:block w-[580px] -left-16"}>
+                                            
+                                            <div className={"absolute z-10 hidden bg-white pt-[26px] group-hover:block w-[575px] -left-16"}>
 
 
                                                 <div className="top-32 border-t-2 border-t-cyan-400 bg-slate-50 px-2 pt-4 pb-2 shadow-lg rounded-b-md ">
@@ -272,7 +427,7 @@ const Navbar = () => {
 
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
 
 
 
@@ -283,14 +438,14 @@ const Navbar = () => {
                                     <Link href="/pricing" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Pricing</a></Link>
                                     {/* <Link href="/pricing" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Pricing</a></Link> */}
                                     <Link href="/about" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">About Us</a></Link>
-                                    <Link href="/contact" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600">Contact Us</a></Link>
+                                    {/* <Link href="/contact" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600">Contact Us</a></Link> */}
                                 </div>
 
                                 {/* SignUp and LogIn Link For medium Screen */}
 
                                 <div className="hidden  lg:flex sm:items-center ">
-                                    <Link href="#" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-4">Sign in</a></Link>
-                                    <Link href="#" ><a className="text-white text-sm font-semibold border px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-red-800 hover:from-sky-400 hover:to-cyan-500">Sign up</a></Link>
+                                    <Link href="#" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-4">Sign In</a></Link>
+                                    <Link href="#" ><a className="text-white text-sm font-semibold border px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-red-800 hover:from-sky-400 hover:to-cyan-500">Sign Up</a></Link>
 
 
 
@@ -526,3 +681,93 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+
+
+
+// {/* Services  */}
+
+// <div className="group relative">
+// <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8 ">Services <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
+//     <div className="absolute z-10 hidden bg-white pt-[26px] group-hover:block w-[575px] -left-16">
+
+//         {/* First Row  */}
+
+//         <div className="top-32 border-t-2 border-t-cyan-400 bg-slate-50 px-2 pt-4 pb-2 shadow-lg rounded-b-md ">
+//             <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-3   px-6">
+//                 <ul className='w-[540px] justify-between flex container ml-[-17px]'>
+
+//                     {/* Advanced Quizzes */}
+
+//                     <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+//                         <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+//                             <Image height={"45px"} width={"45px"} src={Quiz} />
+//                             <div className="font-semibold mr-[0.2rem] text-center text-black ">Advanced Quizzes</div>
+//                         </a>
+//                     </li>
+
+//                     {/* Advanced Tests */}
+
+//                     <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+//                         <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+//                             <Image height={"45px"} width={"45px"} src={Quiz} />
+//                             <div className="font-semibold mr-[0.2rem] text-center text-black ">Advanced Tests</div>
+//                         </a>
+//                     </li>
+
+//                     {/* Application Review */}
+
+//                     <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
+//                         <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+//                             <Image height={"45px"} width={"45px"} src={Quiz} />
+//                             <div className="font-semibold mr-[0.2rem] text-center text-black ">Application Review</div>
+//                         </a>
+//                     </li>
+
+//                 </ul>
+//             </div>
+
+
+//         </div>
+
+//         {/* Second Row  */}
+
+//         <div className="top-32  bg-slate-50 px-2  pb-4 shadow-lg rounded-b-md ">
+//             <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-3   px-6">
+//                 <ul className='w-[540px] justify-between flex container ml-[-17px]'>
+
+                    // {/* Ebooks  */}
+
+                    // <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                    //     <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                    //         <Image height={"45px"} width={"45px"} src={Quiz} />
+                    //         <div className="font-semibold mr-[0.2rem] text-center w-24 text-black ">E-Books</div>
+                    //     </a>
+                    // </li>
+
+                    // {/* PDF Notes  */}
+
+                    // <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
+                    //     <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                    //         <Image height={"45px"} width={"45px"} src={Quiz} />
+                    //         <div className="font-semibold  w-[92px] text-center text-black ">PDF Notes</div>
+                    //     </a>
+                    // </li>
+
+//                     {/* Live Session  */}
+
+//                     <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
+//                         <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+//                             <Image height={"45px"} width={"45px"} src={Quiz} />
+//                             <div className="font-semibold w-[92px]  text-center text-black ">Live Sessions</div>
+//                         </a>
+//                     </li>
+
+//                 </ul>
+//             </div>
+//         </div>
+//     </div>
+// </div>
+// </div> 
