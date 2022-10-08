@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <>
 
       <Navbar />
-      <Com />
+      {/* <Com /> */}
       <Footer />
 
     </>
