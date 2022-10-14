@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/Bs';
+import { BsFillCaretDownFill } from 'react-icons/Bs';
 import Image from 'next/image';
 import Quiz from '../../public/quiz2.png'
 
