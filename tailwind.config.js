@@ -8,6 +8,9 @@ module.exports = {
     extend: {},
     animation:{
       'animation-bounce' : 'bounce 1s 15',
+    },
+    flex:{
+      '2auto' : "0 0 auto",
     }
   },
   variants: {
