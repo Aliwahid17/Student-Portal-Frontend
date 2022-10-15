@@ -1,18 +1,16 @@
 import type { NextPage } from 'next'
-import Footer from './components/Footer'
-import HomePage from './components/HomePage'
-import Navbar from './components/Navbar'
+import Features from '../components/home/Features'
+import Top from '../components/home/Top'
 
 const Home: NextPage = () => {
   return (
     <>
 
-      <Navbar />
-      <HomePage />
-      <Footer />
+      <Top/>
+      <Features/>
+
 
     </>
-
 
   )
 }

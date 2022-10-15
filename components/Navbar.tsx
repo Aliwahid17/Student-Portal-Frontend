@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { BsFillCaretDownFill } from 'react-icons/bs';
 import Image from 'next/image';
-import Quiz from '../../public/quiz2.png'
+import Quiz from '../public/quiz2.png'
 
 const Navbar = () => {
 
@@ -47,37 +47,45 @@ const Navbar = () => {
                                                             {/* Physics  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold pr-[30px] text-center text-black ">Physics</div>
-                                                                </a>
+                                                                <Link href={'/gcse/physics'}>
+                                                                    <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold pr-[30px] text-center text-black ">Physics</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                             {/* Chemistry  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold pr-4 text-center text-black ">Chemistry</div>
-                                                                </a>
+                                                                <Link href={'/gcse/chemistry'}>
+                                                                    <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold pr-4 text-center text-black ">Chemistry</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                             {/* Biology  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold pr-[30px] text-center text-black ">Biology</div>
-                                                                </a>
+                                                                <Link href={'/gcse/biology'}>
+                                                                    <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold pr-[30px] text-center text-black ">Biology</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                             {/* Mathematics  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold mr-[0.4rem] text-center text-black ">Mathematics</div>
-                                                                </a>
+                                                                <Link href={'/gcse/math'}>
+                                                                    <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold mr-[0.4rem] text-center text-black ">Mathematics</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                         </ul>
@@ -99,28 +107,34 @@ const Navbar = () => {
                                                             {/* UCAT  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold pr-8 text-center text-black ">UCAT</div>
-                                                                </a>
+                                                                <Link href='/medical/ucat'>
+                                                                    <div className="flex  cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold pr-8 text-center text-black ">UCAT</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                             {/* Interviews  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold pr-[15px] text-center text-black ">Interviews</div>
-                                                                </a>
+                                                                <Link href='/medical/interview'>
+                                                                    <div className="flex  cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold pr-[15px] text-center text-black ">Interviews</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                             {/* Personal Statement  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold text-center text-black ">Personal Statement</div>
-                                                                </a>
+                                                                <Link href='/medical/personal'>
+                                                                    <div className="flex  cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold text-center text-black ">Personal Statement</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                         </ul>
@@ -142,28 +156,34 @@ const Navbar = () => {
                                                             {/* Ebooks  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold  text-center w-24 text-black ">E-Books</div>
-                                                                </a>
+                                                                <Link href='/store/ebook'>
+                                                                    <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold  text-center w-24 text-black ">E-Books</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                             {/* Flash Cards  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold  w-[92px] text-center text-black ">Flash Cards</div>
-                                                                </a>
+                                                                <Link href='/store/flashcard'>
+                                                                    <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold  w-[92px] text-center text-black ">Flash Cards</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                             {/* Mind Maps  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold pr-[11px] text-center text-black ">Mind Maps</div>
-                                                                </a>
+                                                                <Link href='/store/mindmap'>
+                                                                    <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold pr-[11px] text-center text-black ">Mind Maps</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                         </ul>
@@ -185,37 +205,45 @@ const Navbar = () => {
                                                             {/* Blogs  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold pr-[33px] text-center text-black ">Blogs</div>
-                                                                </a>
+                                                                <Link href='/features/blogs'>
+                                                                    <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold pr-[33px] text-center text-black ">Blogs</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                             {/* Live Seminars  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold pr-[2px] text-center text-black ">Live Seminars</div>
-                                                                </a>
+                                                                <Link href='/features/seminars'>
+                                                                    <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold pr-[2px] text-center text-black ">Live Seminars</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                             {/* Discord Community   */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold pr-[10px] text-center text-black ">Community</div>
-                                                                </a>
+                                                                <Link href='/features/community'>
+                                                                    <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold pr-[10px] text-center text-black ">Community</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                             {/* Support  */}
 
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
-                                                                <a href="#" className="flex  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                    <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                                    <div className="font-semibold pr-[23px] text-center text-black ">Support</div>
-                                                                </a>
+                                                                <Link href='/features/support'>
+                                                                    <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
+                                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                                        <div className="font-semibold pr-[23px] text-center text-black ">Support</div>
+                                                                    </div>
+                                                                </Link>
                                                             </li>
 
                                                         </ul>
@@ -225,6 +253,7 @@ const Navbar = () => {
                                         </div>
                                     </div>
 
+                                    <Link href="/price" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Pricing</a></Link>
                                     <Link href="/about" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">About Us</a></Link>
 
                                 </div>
@@ -277,7 +306,7 @@ const Navbar = () => {
 
                                     <div onClick={() => setGcse(!gcse)} className={`text-gray-800 text-sm font-semibold  bg-white mb-2 ${gcse ? "" : "border-b-2 border-b-cyan-400"} `}>
 
-                                        <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 border-b-2 border-b-gray-100'>
+                                        <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 '>
 
                                             <div className='ml-4  flex mr-4 w-full '>
                                                 GCSE
@@ -294,10 +323,12 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!gcse ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center  w-[83%] text-black ">Physics</div>
-                                                    </a>
+                                                    <Link href='/gcse/physics'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center  w-[83%] text-black ">Physics</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
 
@@ -308,10 +339,12 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!gcse ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center w-[83%] text-black ">Chemistry</div>
-                                                    </a>
+                                                    <Link href='/gcse/chemistry'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center w-[83%] text-black ">Chemistry</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -321,10 +354,12 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!gcse ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center w-[83%] text-black ">Biology</div>
-                                                    </a>
+                                                    <Link href='/gcse/biology'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center w-[83%] text-black ">Biology</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -334,10 +369,12 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!gcse ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center w-[83%] text-black ">Mathematics</div>
-                                                    </a>
+                                                    <Link href='/gcse/math'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center w-[83%] text-black ">Mathematics</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -348,7 +385,7 @@ const Navbar = () => {
 
                                     <div onClick={() => setMedical(!medical)} className={`text-gray-800 text-sm font-semibold  bg-white mb-2 ${medical ? "" : "border-b-2 border-b-cyan-400"} `}>
 
-                                        <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 border-b-2 border-b-gray-100'>
+                                        <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 '>
                                             <div className='ml-4  flex mr-4 w-full '>
                                                 Medical Application
                                             </div>
@@ -363,10 +400,12 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!medical ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center  w-[83%] text-black ">UCAT</div>
-                                                    </a>
+                                                    <Link href='/medical/ucat'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center  w-[83%] text-black ">UCAT</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -376,10 +415,12 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!medical ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center  w-[83%] text-black ">Interviews</div>
-                                                    </a>
+                                                    <Link href='/medical/interview'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center  w-[83%] text-black ">Interviews</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -389,10 +430,12 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!medical ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center  w-[83%] text-black ">Personal Statement</div>
-                                                    </a>
+                                                    <Link href='/medical/personal'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center  w-[83%] text-black ">Personal Statement</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -403,7 +446,7 @@ const Navbar = () => {
 
                                     <div onClick={() => setStore(!store)} className={`text-gray-800 text-sm font-semibold  bg-white mb-2 ${store ? "" : "border-b-2 border-b-cyan-400"} `}>
 
-                                        <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 border-b-2 border-b-gray-100'>
+                                        <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 '>
                                             <div className='ml-4  flex mr-4 w-full '>
                                                 Store
                                             </div>
@@ -417,10 +460,12 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!store ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center  w-[83%] text-black ">Ebooks</div>
-                                                    </a>
+                                                    <Link href='/store/ebook'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center  w-[83%] text-black ">Ebooks</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -430,10 +475,12 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!store ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center  w-[83%] text-black ">Flash Cards</div>
-                                                    </a>
+                                                    <Link href='/store/flashcard'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center  w-[83%] text-black ">Flash Cards</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -443,10 +490,12 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!store ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center  w-[83%] text-black ">Mind Maps</div>
-                                                    </a>
+                                                    <Link href='/store/mindmap'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center  w-[83%] text-black ">Mind Maps</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -457,7 +506,7 @@ const Navbar = () => {
 
                                     <div onClick={() => setFeatures(!features)} className={`text-gray-800 text-sm font-semibold  bg-white mb-2 ${features ? "" : "border-b-2 border-b-cyan-400"} `}>
 
-                                        <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 border-b-2 border-b-gray-100'>
+                                        <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 '>
                                             <div className='ml-4  flex mr-4 w-full '>
                                                 Features
                                             </div>
@@ -471,10 +520,12 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!features ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center  w-[83%] text-black ">Blogs</div>
-                                                    </a>
+                                                    <Link href='/features/blogs'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center  w-[83%] text-black ">Blogs</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -484,10 +535,12 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!features ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center w-[83%] text-black ">Live Seminars</div>
-                                                    </a>
+                                                    <Link href='/features/seminars'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center w-[83%] text-black ">Live Seminars</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -497,10 +550,12 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!features ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center w-[83%] text-black ">Discord Community</div>
-                                                    </a>
+                                                    <Link href='/features/community'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center w-[83%] text-black ">Discord Community</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -510,36 +565,48 @@ const Navbar = () => {
                                         <div className={`flex bg-white mt-2 mb-2 ml-4 ${!features ? "hidden" : "block "}`} >
                                             <ul className='w-[340px] grow ml-0 mt-1 mb-1 justify-between flex container '>
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
-                                                    <a href="#" className="flex  md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                        <Image height={"45px"} width={"45px"} src={Quiz} />
-                                                        <div className="font-semibold  text-center w-[83%] text-black ">Support</div>
-                                                    </a>
+                                                    <Link href='/features/support'>
+                                                        <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
+                                                            <Image height={"45px"} width={"45px"} src={Quiz} />
+                                                            <div className="font-semibold  text-center w-[83%] text-black ">Support</div>
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
 
                                     </div>
 
+                                    {/* Pricing  */}
+
+                                    <div className={`text-gray-800 text-sm font-semibold  bg-white mb-2  border-b-2 border-b-cyan-400 `}>
+                                        <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 '>
+                                            <Link href='/price'>
+                                                <div className='ml-4 cursor-pointer flex mr-4 w-full '>
+                                                    Pricing
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+
                                     {/* About Us  */}
 
                                     <div className={`text-gray-800 text-sm font-semibold  bg-white mb-2  border-b-2 border-b-cyan-400 `}>
-
-                                        <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 border-b-2 border-b-gray-100'>
-                                            <div className='ml-4  flex mr-4 w-full '>
-                                                About Us
-                                            </div>
-
+                                        <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 '>
+                                            <Link href='/about'>
+                                                <div className='ml-4 cursor-pointer flex mr-4 w-full '>
+                                                    About Us
+                                                </div>
+                                            </Link>
                                         </div>
-
                                     </div>
 
                                 </div>
                             </div>
-
                         </div>
-                    </div >
-                </div >
-            </nav >
+                    </div>
+                </div>
+            </nav>
 
         </>
 
