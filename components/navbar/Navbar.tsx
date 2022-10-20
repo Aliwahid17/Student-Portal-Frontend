@@ -2,15 +2,38 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { BsFillCaretDownFill } from 'react-icons/bs';
 import Image from 'next/image';
-import Quiz from '../public/quiz2.png'
+import Quiz from '../../public/quiz2.png'
+import Auth from './Auth';
+// import AuthSm from './AuthSm';
+import { useAuth } from '../../context/AuthState';
+
 
 const Navbar = () => {
 
-    const [navbar, setNavbar] = useState(false);
     const [gcse, setGcse] = useState(false);
     const [medical, setMedical] = useState(false);
     const [store, setStore] = useState(false);
     const [features, setFeatures] = useState(false);
+
+    const { user, logOut, googleSignIn } = useAuth()
+
+    const [navbar, setNavbar] = useState(false);
+    const [nav, setNav] = useState(false)
+
+    const userOpen = () => {
+        setNavbar(false)
+        setNav(!nav)
+    }
+
+    const active = () => {
+        if (user) {
+            if (nav) {
+                return true
+            }
+            return false
+        }
+    }
+
 
     return (
         <>
@@ -39,9 +62,9 @@ const Navbar = () => {
 
                                     <div className="group relative">
                                         <div className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8 ">GCSE <BsFillCaretDownFill className='inline-flex hover:animate-animation-bounce' />
-                                            <div className={"absolute z-10 hidden bg-white pt-[26px] group-hover:block w-[772px]  -left-16"}>
+                                            <div className="absolute z-10 hidden bg-white pt-[26px] group-hover:block w-[772px]  -left-16">
                                                 <div className="top-32 border-t-2 border-t-cyan-400 bg-slate-50 px-2 pt-4 pb-2 shadow-lg rounded-b-md ">
-                                                    <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900 dark:text-white  grid-cols-5   px-6">
+                                                    <div className="grid py-2  mx-auto max-w-screen-xl text-gray-900   grid-cols-5   px-6">
                                                         <ul className='w-[739px] justify-between flex container ml-[-17px]'>
 
                                                             {/* Physics  */}
@@ -261,23 +284,34 @@ const Navbar = () => {
                                 {/* SignUp and LogIn Link For medium Screen */}
 
                                 <div className="hidden  lg:flex sm:items-center ">
-
-                                    <Link href="#" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-4">Sign In</a></Link>
-                                    <Link href="#" ><a className="text-white text-sm font-semibold border px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-red-800 hover:from-sky-400 hover:to-cyan-500">Sign Up</a></Link>
-
+                                    <Auth />
                                 </div>
 
                                 {/* Menu options Button ,Login and signup in moblie screen */}
 
                                 <div className="lg:hidden cursor-pointer flex">
 
-                                    <Link href="#" ><a className="text-gray-800 text-sm font-semibold pb-[6px] py-2 hover:text-cyan-600 mr-4 ">Sign in</a></Link>
-                                    <Link href="#" ><a className="text-white text-sm font-semibold border px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-red-800 hover:from-sky-400 hover:to-cyan-500">Sign up</a></Link>
+                                    {
+                                        user ?
+                                            (
 
-                                    <button
-                                        className={'p-2 text-gray-700 rounded-md outline-none'}
-                                        onClick={() => setNavbar(!navbar)}
-                                    >
+
+                                                <button className="flex  justify-center items-center w-10 h-10" onClick={() => userOpen()} >
+                                                    <Image className='rounded-full' src={user.photoURL} width={35} height={35} />
+                                                    {/* <Image className='rounded-full' src={Quiz} width={35} height={35} /> */}
+                                                </button>
+
+                                            ) :
+                                            (
+                                                <>
+                                                    <button className="text-gray-800 text-sm font-semibold pb-[6px] py-2 hover:text-cyan-600 mr-4 " onClick={() => googleSignIn()} >Sign In</button>
+                                                    <button className="text-white text-sm font-semibold border px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-red-800 hover:from-sky-400 hover:to-cyan-500" onClick={() => googleSignIn()} >Sign Up</button>
+                                                </>
+                                            )
+                                    }
+
+                                    <button className={'p-2 text-gray-700 rounded-md outline-none'} onClick={() => setNavbar(!navbar)}>
+
                                         {navbar ? (
 
                                             <svg width="25px" height="25px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-door-open animate-animation-bounce">
@@ -603,7 +637,42 @@ const Navbar = () => {
 
                                 </div>
                             </div>
+
+
+                            <div className={`block bg-white border-t-2 py-2 lg:hidden ${active() ? "block" : "hidden"}`}>
+                                {/* <div className="flex flex-col "> */}
+                                {/* <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 '> */}
+                                <Link href='#'>
+                                    <div className="flex items-center cursor-pointer p-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform  hover:bg-gray-100  ">
+                                        <svg className="w-5 h-5 mx-1 text-cyan-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8C17 10.7614 14.7614 13 12 13C9.23858 13 7 10.7614 7 8ZM12 11C13.6569 11 15 9.65685 15 8C15 6.34315 13.6569 5 12 5C10.3431 5 9 6.34315 9 8C9 9.65685 10.3431 11 12 11Z" fill="currentColor"></path>
+                                            <path d="M6.34315 16.3431C4.84285 17.8434 4 19.8783 4 22H6C6 20.4087 6.63214 18.8826 7.75736 17.7574C8.88258 16.6321 10.4087 16 12 16C13.5913 16 15.1174 16.6321 16.2426 17.7574C17.3679 18.8826 18 20.4087 18 22H20C20 19.8783 19.1571 17.8434 17.6569 16.3431C16.1566 14.8429 14.1217 14 12 14C9.87827 14 7.84344 14.8429 6.34315 16.3431Z" fill="currentColor"></path>
+                                        </svg>
+
+                                        <span className="mx-1">
+                                            view profile
+                                        </span>
+                                    </div>
+                                </Link>
+
+                                <hr className=" border-gray-200 dark:border-cyan-400 " />
+
+
+                                <div className="flex items-center cursor-pointer p-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform  hover:bg-gray-100 ">
+                                    <button className='flex' onClick={() => logOut()}>
+                                        <svg className="w-5 h-5 mx-1 text-red-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 21H10C8.89543 21 8 20.1046 8 19V15H10V19H19V5H10V9H8V5C8 3.89543 8.89543 3 10 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21ZM12 16V13H3V11H12V8L17 12L12 16Z" fill="currentColor"></path>
+                                        </svg>
+
+                                        <span className="mx-1">
+                                            Sign Out
+                                        </span>
+                                    </button>
+                                </div>
+
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </nav>
