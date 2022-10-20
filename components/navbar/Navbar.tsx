@@ -625,7 +625,7 @@ const Navbar = () => {
 
                                     {/* About Us  */}
 
-                                    <div className={`text-gray-800 text-sm font-semibold  bg-white mb-2  border-b-2 border-b-cyan-400 `}>
+                                    <div className="text-gray-800 text-sm font-semibold  bg-white">
                                         <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 '>
                                             <Link href='/about'>
                                                 <div className='ml-4 cursor-pointer flex mr-4 w-full '>
