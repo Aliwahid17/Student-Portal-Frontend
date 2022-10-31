@@ -4,7 +4,6 @@ import { BsFillCaretDownFill } from 'react-icons/bs';
 import Image from 'next/image';
 import Quiz from '../../public/quiz2.png'
 import Auth from './Auth';
-// import AuthSm from './AuthSm';
 import { useAuth } from '../../context/AuthState';
 
 
@@ -29,11 +28,11 @@ const Navbar = () => {
         if (user) {
             if (nav) {
                 return true
+            } else {
+                return false
             }
-            return false
         }
     }
-
 
     return (
         <>
@@ -297,15 +296,13 @@ const Navbar = () => {
 
 
                                                 <button className="flex  justify-center items-center w-10 h-10" onClick={() => userOpen()} >
-                                                    <Image className='rounded-full' src={user.photoURL} width={35} height={35} />
-                                                    {/* <Image className='rounded-full' src={Quiz} width={35} height={35} /> */}
+                                                    {user.photoURL && <Image className='rounded-full' src={user.photoURL} width={35} height={35} />}
                                                 </button>
 
                                             ) :
                                             (
                                                 <>
-                                                    <button className="text-gray-800 text-sm font-semibold pb-[6px] py-2 hover:text-cyan-600 mr-4 " onClick={() => googleSignIn()} >Sign In</button>
-                                                    <button className="text-white text-sm font-semibold border px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-red-800 hover:from-sky-400 hover:to-cyan-500" onClick={() => googleSignIn()} >Sign Up</button>
+                                                    <button className="text-white text-sm font-semibold border px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-red-800 hover:from-sky-400 hover:to-cyan-500" onClick={() => googleSignIn()} >Sign In</button>
                                                 </>
                                             )
                                     }
@@ -640,8 +637,6 @@ const Navbar = () => {
 
 
                             <div className={`block bg-white border-t-2 py-2 lg:hidden ${active() ? "block" : "hidden"}`}>
-                                {/* <div className="flex flex-col "> */}
-                                {/* <div className='-ml-4 -mr-4 hover:bg-gray-100 flex items-center h-16 '> */}
                                 <Link href='#'>
                                     <div className="flex items-center cursor-pointer p-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform  hover:bg-gray-100  ">
                                         <svg className="w-5 h-5 mx-1 text-cyan-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
