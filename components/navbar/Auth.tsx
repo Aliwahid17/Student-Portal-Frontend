@@ -1,18 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useAuth } from '../../context/AuthState';
-import { RiAccountPinCircleFill } from 'react-icons/ri';
 import Image from 'next/image';
 import Link from 'next/link';
-import Quiz from '../../public/quiz2.png'
-
-
 const Auth = () => {
 
     const { user, logOut, googleSignIn } = useAuth()
-
-
-
-    // console.log(user)
 
     return (
         <>
@@ -20,19 +12,12 @@ const Auth = () => {
 
             {
                 user ?
-
                     (
-
-
                         <>
-
                             <div className="hidden lg:flex sm:items-center">
-
                                 <div className="group relative">
-
                                     <div className="flex  justify-center items-center w-10 h-10">
-                                        <Image className='rounded-full' src={user.photoURL} width={35} height={35} />
-                                        {/* <Image className='rounded-full' src={Quiz} width={35} height={35} /> */}
+                                        {user.photoURL && <Image className='rounded-full' src={user.photoURL} width={35} height={35} alt='user' />}
                                     </div>
 
                                     <div className="absolute z-10 hidden bg-white pt-[16px] group-hover:block w-[185px] -left-[130px] ">
@@ -71,9 +56,7 @@ const Auth = () => {
                     (
                         (
                             <>
-                                {/* <button className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-4" onClick={() => googleSignIn()}  >Sign In</button> */}
-                                <button className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-4">Sign In</button>
-                                <button className="text-white text-sm font-semibold border px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-red-800 hover:from-sky-400 hover:to-cyan-500" onClick={() => googleSignIn()}  >Sign Up</button>
+                                <button className="text-white text-sm font-semibold border px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-red-800 hover:from-sky-400 hover:to-cyan-500" onClick={() => googleSignIn()}  >Sign In</button>
                             </>
                         )
                     )
