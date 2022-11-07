@@ -17,7 +17,7 @@ const AuthState = ({ children }: any) => {
 
         try {
             const res = (await signInWithPopup(auth, provider)).user
-            toast.success('🎉🎊😃😎 You Signed In successfully', {
+            toast.success('You Signed In successfully 🎉 ', {
                 position: "top-right",
                 autoClose: 2500,
                 hideProgressBar: false,
@@ -59,7 +59,7 @@ const AuthState = ({ children }: any) => {
 
     const logOut = () => {
         console.log('user log out')
-        toast.success('🤯😨😔😥 You Logged Out successfully', {
+        toast.success('You Logged Out Successfully 😢', {
             position: "top-right",
             autoClose: 2500,
             hideProgressBar: false,
