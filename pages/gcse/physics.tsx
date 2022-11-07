@@ -1,8 +1,12 @@
 import React from 'react'
+import Options from '../../components/gcse/Options'
 
 const Physics = () => {
   return (
-    <div>Physics</div>
+    // <div>Physics</div>
+    <>
+    <Options/>
+    </>
   )
 }
 
