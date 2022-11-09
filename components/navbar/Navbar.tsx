@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { BsFillCaretDownFill } from 'react-icons/bs';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Auth from './Auth';
 import { useAuth } from '../../context/AuthState';
 import Physics from '../../public/navbar/physics.svg'
@@ -83,7 +83,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                                 <Link href={'/gcse/physics'}>
                                                                     <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                        <Image height={"45px"} width={"45px"} src={Physics} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Physics} />
                                                                         <div className="font-semibold pr-[30px] text-center text-black ">Physics</div>
                                                                     </div>
                                                                 </Link>
@@ -94,7 +94,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                                 <Link href={'/gcse/chemistry'}>
                                                                     <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                        <Image height={"45px"} width={"45px"} src={Chemistry} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Chemistry} />
                                                                         <div className="font-semibold pr-4 text-center text-black ">Chemistry</div>
                                                                     </div>
                                                                 </Link>
@@ -105,7 +105,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                                 <Link href={'/gcse/biology'}>
                                                                     <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                        <Image height={"45px"} width={"45px"} src={Biology} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Biology} />
                                                                         <div className="font-semibold pr-[30px] text-center text-black ">Biology</div>
                                                                     </div>
                                                                 </Link>
@@ -116,7 +116,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
                                                                 <Link href={'/gcse/math'}>
                                                                     <div className="flex  cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                        <Image height={"45px"} width={"45px"} src={Math} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Math} />
                                                                         <div className="font-semibold mr-[0.4rem] text-center text-black ">Mathematics</div>
                                                                     </div>
                                                                 </Link>
@@ -143,7 +143,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                                 <Link href='/medical/ucat'>
                                                                     <div className="flex  cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                        <Image height={"45px"} width={"45px"} src={Knowledge} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Knowledge} />
                                                                         <div className="font-semibold pr-8 text-center text-black ">UCAT</div>
                                                                     </div>
                                                                 </Link>
@@ -154,7 +154,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                                 <Link href='/medical/interview'>
                                                                     <div className="flex  cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                        <Image height={"45px"} width={"45px"} src={Interview} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Interview} />
                                                                         <div className="font-semibold pr-[15px] text-center text-black ">Interviews</div>
                                                                     </div>
                                                                 </Link>
@@ -166,7 +166,7 @@ const Navbar = () => {
                                                                 <Link href='/medical/personal'>
                                                                     <div className="flex  cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
                                                                     {/* <div className="flex  cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400"> */}
-                                                                        <Image height={"45px"} width={"45px"} src={Statement} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Statement} />
                                                                         <div className="font-semibold text-center w-[96px] text-black ">Personal Statement</div>
                                                                     </div>
                                                                 </Link>
@@ -193,7 +193,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                                 <Link href='/store/ebook'>
                                                                     <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                        <Image height={"45px"} width={"45px"} src={Book} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Book} />
                                                                         <div className="font-semibold  text-center w-24 text-black ">E-Books</div>
                                                                     </div>
                                                                 </Link>
@@ -204,7 +204,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                                 <Link href='/store/flashcard'>
                                                                     <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                        <Image height={"45px"} width={"45px"} src={Card} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Card} />
                                                                         <div className="font-semibold  w-[92px] text-center text-black ">Flash Cards</div>
                                                                     </div>
                                                                 </Link>
@@ -215,7 +215,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
                                                                 <Link href='/store/mindmap'>
                                                                     <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                        <Image height={"45px"} width={"45px"} src={Map} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Map} />
                                                                         <div className="font-semibold pr-[11px] text-center text-black ">Mind Maps</div>
                                                                     </div>
                                                                 </Link>
@@ -242,7 +242,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                                 <Link href='/features/blogs'>
                                                                     <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                        <Image height={"45px"} width={"45px"} src={Blog} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Blog} />
                                                                         <div className="font-semibold pr-[33px] text-center text-black ">Blogs</div>
                                                                     </div>
                                                                 </Link>
@@ -253,7 +253,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                                 <Link href='/features/seminars'>
                                                                     <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                        <Image height={"45px"} width={"45px"} src={Seminar} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Seminar} />
                                                                         <div className="font-semibold pr-[2px] text-center text-black ">Live Seminars</div>
                                                                     </div>
                                                                 </Link>
@@ -264,7 +264,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                                 <Link href='/features/community'>
                                                                     <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                        <Image height={"45px"} width={"45px"} src={Discord} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Discord} />
                                                                         <div className="font-semibold pr-[10px] text-center text-black ">Community</div>
                                                                     </div>
                                                                 </Link>
@@ -275,7 +275,7 @@ const Navbar = () => {
                                                             <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  '>
                                                                 <Link href='/features/support'>
                                                                     <div className="flex cursor-pointer justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_13rem_0_0_0]   hover:shadow-cyan-400">
-                                                                        <Image height={"45px"} width={"45px"} src={Support} />
+                                                                        <Image height={"45"} width={"45"} alt='#' src={Support}/>
                                                                         <div className="font-semibold pr-[23px] text-center text-black ">Support</div>
                                                                     </div>
                                                                 </Link>
@@ -288,8 +288,8 @@ const Navbar = () => {
                                         </div>
                                     </div>
 
-                                    <Link href="/price" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Pricing</a></Link>
-                                    <Link href="/about" ><a className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">About Us</a></Link>
+                                    <Link href="/price" className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">Pricing</Link>
+                                    <Link href="/about" className="text-gray-800 text-sm font-semibold hover:text-cyan-600 mr-8">About</Link>
 
                                 </div>
 
@@ -369,7 +369,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/gcse/physics'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Physics} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Physics} />
                                                             <div className="font-semibold  text-center  w-[83%] text-black ">Physics</div>
                                                         </div>
                                                     </Link>
@@ -385,7 +385,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/gcse/chemistry'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Chemistry} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Chemistry} />
                                                             <div className="font-semibold  text-center w-[83%] text-black ">Chemistry</div>
                                                         </div>
                                                     </Link>
@@ -400,7 +400,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/gcse/biology'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Biology} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Biology} />
                                                             <div className="font-semibold  text-center w-[83%] text-black ">Biology</div>
                                                         </div>
                                                     </Link>
@@ -415,7 +415,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/gcse/math'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Math} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Math} />
                                                             <div className="font-semibold  text-center w-[83%] text-black ">Mathematics</div>
                                                         </div>
                                                     </Link>
@@ -446,7 +446,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/medical/ucat'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Knowledge} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Knowledge} />
                                                             <div className="font-semibold  text-center  w-[83%] text-black ">UCAT</div>
                                                         </div>
                                                     </Link>
@@ -461,7 +461,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/medical/interview'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Interview} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Interview} />
                                                             <div className="font-semibold  text-center  w-[83%] text-black ">Interviews</div>
                                                         </div>
                                                     </Link>
@@ -476,7 +476,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/medical/personal'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Statement} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Statement} />
                                                             <div className="font-semibold  text-center  w-[83%] text-black ">Personal Statement</div>
                                                         </div>
                                                     </Link>
@@ -506,7 +506,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/store/ebook'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Book} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Book} />
                                                             <div className="font-semibold  text-center  w-[83%] text-black ">Ebooks</div>
                                                         </div>
                                                     </Link>
@@ -521,7 +521,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/store/flashcard'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Card} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Card} />
                                                             <div className="font-semibold  text-center  w-[83%] text-black ">Flash Cards</div>
                                                         </div>
                                                     </Link>
@@ -536,7 +536,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/store/mindmap'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Map} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Map} />
                                                             <div className="font-semibold  text-center  w-[83%] text-black ">Mind Maps</div>
                                                         </div>
                                                     </Link>
@@ -566,7 +566,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/features/blogs'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Blog} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Blog} />
                                                             <div className="font-semibold  text-center  w-[83%] text-black ">Blogs</div>
                                                         </div>
                                                     </Link>
@@ -581,7 +581,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/features/seminars'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Seminar} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Seminar} />
                                                             <div className="font-semibold  text-center w-[83%] text-black ">Live Seminars</div>
                                                         </div>
                                                     </Link>
@@ -596,7 +596,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/features/community'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Discord} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Discord} />
                                                             <div className="font-semibold  text-center w-[83%] text-black ">Discord Community</div>
                                                         </div>
                                                     </Link>
@@ -611,7 +611,7 @@ const Navbar = () => {
                                                 <li className='container  border-b-2 border-b-cyan-400 hover:border-b-0  mr-5'>
                                                     <Link href='/features/support'>
                                                         <div className="flex cursor-pointer md:justify-around  justify-between items-center p-3 rounded-lg   transition ease-in-out delay-100 bg-sky-50 hover:-translate-y-1 hover:scale-110   hover:shadow-[inset_45rem_0_0_0]   hover:shadow-cyan-400">
-                                                            <Image height={"45px"} width={"45px"} src={Support} />
+                                                            <Image height={"45"} width={"45"} alt='#' src={Support} />
                                                             <div className="font-semibold  text-center w-[83%] text-black ">Support</div>
                                                         </div>
                                                     </Link>
